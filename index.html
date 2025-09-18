@@ -87,14 +87,19 @@
     </p>
   </section>
 
-  <!-- Chatbot Placeholder -->
-  <section class="chatbot">
-    <h2>Need Help? Chat with CommerceCare</h2>
-    <div class="chatbot-box">
-      <!-- Placeholder for chatbot script -->
-      <p>[Chatbot will appear here. Insert your chatbot code/script in this container.]</p>
+<section class="chatbot">
+  <h2>Need Help? Chat with CommerceCare</h2>
+  <div class="chatbot-box" id="chatbot">
+    <div id="chat-window">
+      <div id="messages"></div>
     </div>
-  </section>
+    <div id="input-area">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</section>
+<script src="chatbot.js"></script>
 
   <!-- Footer -->
   <footer>
